@@ -3,468 +3,201 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guaranda · Dirección de producción</title>
-<meta name="description" content="Dirección de producción de la cobertura de Diego Serrano en el Rally Siete Colinas, Guaranda, 20–21 de noviembre de 2026.">
+<title>Guaranda · Producción</title>
+<meta name="description" content="Cobertura de Diego Serrano en el Rally Siete Colinas, Guaranda, 20–21 de noviembre de 2026.">
 <link rel="icon" href="media/des-rojo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Instrument+Sans:wght@400;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
 <style>
-:root{--bk:#0D0E12;--bk2:#1A1C21;--bk3:#2A2D34;--wh:#fff;--paper:#F1F1EF;--card:#fff;--ink:#111215;--mut:#5E626B;--mutd:#A3A6AE;--red:#E31B23;--yel:#F5B800;--blu:#0084C6;--line:rgba(17,18,21,.12);--lined:rgba(255,255,255,.12);
+:root{--bk:#0D0E12;--bk2:#1A1C21;--red:#E31B23;--yel:#F5B800;--paper:#F4F4F2;--ink:#111215;--mut:#5E626B;--line:rgba(17,18,21,.12);
 --head:'Barlow Condensed',Impact,sans-serif;--body:'Instrument Sans',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;overflow-x:hidden}
-img{display:block;max-width:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
 a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-.top{position:sticky;top:0;z-index:50;background:rgba(13,14,18,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid var(--lined)}
-.top .wrap{display:flex;align-items:center;gap:14px;height:56px}
-.top img{height:38px;width:auto}.top img.des{height:20px}
-.top nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
-.top nav::-webkit-scrollbar{display:none}
-.top nav a{font-family:var(--mono);font-size:11px;text-decoration:none;padding:6px 8px;border-radius:4px;color:var(--mutd);white-space:nowrap}
-.top nav a:hover{background:var(--red);color:#fff}
-.hero{position:relative;background:var(--bk);color:#fff;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:url('media/guaranda-1.jpg') center 30%/cover;opacity:.35}
-.hero:before{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;z-index:2;background:linear-gradient(90deg,var(--red) 0 50%,var(--yel) 50% 75%,var(--blu) 75%)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,14,18,.96) 0%,rgba(13,14,18,.7) 60%,rgba(13,14,18,.4) 100%)}
-.hero .wrap{position:relative;z-index:1;padding:64px 20px 56px}
-.plate{display:inline-block;background:var(--red);color:#fff;font-family:var(--mono);font-size:12px;font-weight:700;padding:6px 10px;border-radius:3px;text-transform:uppercase}
-h1{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(54px,10vw,128px);line-height:.85;text-transform:uppercase;margin:16px 0 12px}
-h1 em{color:var(--red);font-style:italic;display:block}
-.lead{font-size:clamp(16px,2vw,20px);max-width:720px;color:#E3E4E7}
-.who{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.who span{font-family:var(--mono);font-size:12px;background:var(--bk3);padding:6px 10px;border-radius:4px}
-.who b{color:var(--yel)}
-section{padding:72px 0;position:relative}
-.dark{background:var(--bk);color:#fff}
-.tc{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
-.dark .tc{color:var(--mutd)}
-.tc i{font-style:normal;background:var(--bk);color:#fff;padding:4px 8px;border-radius:3px;font-weight:700}
-.dark .tc i{background:var(--red)}
-.tc:after{content:"";flex:1;height:1px;background:repeating-linear-gradient(90deg,currentColor 0 6px,transparent 6px 12px);opacity:.35}
-h2{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(40px,6vw,76px);line-height:.9;text-transform:uppercase;max-width:18ch}
-h2 em{color:var(--red);font-style:italic}
-.intro{font-size:17px;max-width:780px;margin:16px 0 30px}
-.dark .intro,.dark .mut{color:#D9DADF}
-h3{font-family:var(--head);font-style:italic;font-weight:900;font-size:34px;line-height:.95;text-transform:uppercase}
-h4{font-size:17px;line-height:1.25;margin-bottom:6px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
-.dark .card{background:var(--bk2);border-color:var(--lined)}
-.mut{color:var(--mut)}
-.tag{display:inline-block;font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:3px;background:var(--bk3);color:#fff;text-transform:uppercase;font-weight:700}
-.tag.r{background:var(--red)}.tag.y{background:var(--yel);color:var(--bk)}.tag.b{background:var(--blu)}
-/* alerta */
-.alert{background:var(--yel);color:var(--bk);border-radius:12px;padding:18px 22px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin-top:28px}
-.alert b.big{font-family:var(--head);font-size:52px;line-height:.85;font-style:italic}
-.alert p{font-size:15px}
-/* cronograma */
-.sched{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.tbl{width:100%;border-collapse:collapse;font-size:14px}
-.tbl th{font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--mutd);text-align:left;padding:8px 6px;border-bottom:1px solid var(--lined)}
-.tbl td{padding:10px 6px;border-bottom:1px solid var(--lined);vertical-align:top}
-.tbl td.t{font-family:var(--mono);font-weight:700;white-space:nowrap}
-.tbl tr.hot td{background:rgba(227,27,35,.18)}
-.tbl tr.del td{background:rgba(245,184,0,.14)}
-.tbl tr.del td.t{color:var(--yel)}
-.arts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.arts img{border-radius:8px}
-/* entregables resumen */
-.dels{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.del{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;transition:transform .2s,border-color .2s}
-.del:hover{transform:translateY(-3px);border-color:var(--red)}
-.del .k{font-family:var(--head);font-style:italic;font-weight:900;font-size:44px;line-height:.8;color:var(--red)}
-.del h4{margin-top:8px}
-.del .w{font-family:var(--mono);font-size:12px;color:var(--mut);margin-top:8px}
-/* bloque de entregable */
-.blk{display:grid;grid-template-columns:380px 1fr;gap:28px;align-items:start}
-.ref{position:sticky;top:76px}
-.emb{background:#000;border-radius:12px;overflow:hidden;border:1px solid var(--lined)}
-.emb iframe{width:100%;height:640px;border:0;display:block;background:#fff}
-.emb.short iframe{height:560px}
-.go{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
-.btn{display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:10px 14px;border-radius:999px}
-.btn.g{background:var(--bk3)}
-.paper .btn.g{background:var(--bk);}
-.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0}
-.specs div{background:var(--bk3);border-radius:8px;padding:10px 12px}
-.paper .specs div{background:#fff;border:1px solid var(--line)}
-.specs b{display:block;font-family:var(--head);font-size:22px;line-height:1;font-style:italic}
-.specs small{font-size:11px;color:var(--mutd)}
-.paper .specs small{color:var(--mut)}
-.shots{list-style:none;display:grid;gap:8px;margin-top:10px;counter-reset:s}
-.shots li{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:12px 14px;border-radius:10px;background:var(--bk2);border:1px solid var(--lined)}
-.paper .shots li{background:#fff;border-color:var(--line)}
-.shots .tm{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--yel)}
-.paper .shots .tm{color:var(--red)}
-.shots .tm small{display:block;font-weight:500;color:var(--mutd);margin-top:4px}
-.paper .shots .tm small{color:var(--mut)}
-.shots b{display:block;font-size:15px}
-.shots p{font-size:14px;color:#D9DADF;margin-top:2px}
-.paper .shots p{color:var(--mut)}
-.shots li.key{border-color:var(--red);box-shadow:inset 4px 0 0 var(--red)}
-.box{border-radius:10px;padding:16px 18px;margin-top:16px;font-size:15px}
-.box.y{background:var(--yel);color:var(--bk)}
-.box.r{background:var(--red);color:#fff}
-.box.d{background:var(--bk3);color:#fff}
-.paper .box.d{background:#fff;color:var(--ink);border:1px solid var(--line)}
-.box h5{font-family:var(--mono);font-size:11px;text-transform:uppercase;margin-bottom:6px}
-.box ul{padding-left:18px;display:grid;gap:4px}
-.quote{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(30px,4vw,46px);line-height:1;text-transform:uppercase}
-/* fotos */
-.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.pg{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.pg img{aspect-ratio:3/4;object-fit:cover;width:100%}
-.pg .bd{padding:10px 12px}
-.pg .bd b{display:block;font-size:14px;line-height:1.25}
-.pg .bd span{font-size:12.5px;color:var(--mut);display:block;margin-top:3px}
-.pg.fav{border:2px solid var(--red)}
-.pg .n{font-family:var(--mono);font-size:11px;color:var(--red);font-weight:700}
-.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.hg{background:var(--bk2);border:1px solid var(--lined);border-radius:10px;overflow:hidden}
-.hg img{aspect-ratio:16/9;object-fit:cover;width:100%}
-.hg .bd{padding:10px 12px;font-size:13px;color:#D9DADF}
-.hg .bd b{color:#fff;display:block;font-size:14px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:var(--bk);color:#fff;padding:22px 0 30px;border-bottom:6px solid var(--red)}
+.logos{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.logos img{height:40px;width:auto}.logos img.des{height:22px}
+h1{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(44px,8vw,84px);line-height:.88;text-transform:uppercase}
+h1 span{color:var(--red)}
+.sub{color:#C9CBD1;margin-top:10px}
+/* horario */
+.hor{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.day{background:var(--bk2);border-radius:12px;padding:16px 18px}
+.day h3{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--yel);margin-bottom:8px}
+.day ul{list-style:none}
+.day li{display:flex;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+.day li:last-child{border:0}
+.day li b{font-family:var(--mono);font-size:14px;min-width:54px}
+.day li.e b{color:var(--yel)}
+.day li.e{color:var(--yel);font-weight:600}
+.day li.r b{color:var(--red)}
+/* entregas */
+.item{padding:56px 0;border-bottom:1px solid var(--line)}
+.head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.num{font-family:var(--head);font-style:italic;font-weight:900;font-size:64px;line-height:.8;color:var(--red)}
+h2{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(34px,5vw,52px);line-height:.95;text-transform:uppercase}
+.when{font-family:var(--mono);font-size:13px;background:var(--yel);color:var(--bk);padding:5px 10px;border-radius:4px;margin-left:auto}
+.cols{display:grid;grid-template-columns:360px 1fr;gap:32px;align-items:start}
+.label{font-family:var(--mono);font-size:12px;color:var(--red);text-transform:uppercase;margin-bottom:8px}
+.emb{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.emb iframe{width:100%;height:620px;border:0;display:block}
+.open{display:inline-block;margin-top:10px;font-weight:700;font-size:15px;color:var(--red);text-decoration:none}
+h4{font-family:var(--mono);font-size:12px;text-transform:uppercase;color:var(--mut);margin:0 0 10px}
+ol,ul.l{padding-left:22px;display:grid;gap:10px}
+ol li,ul.l li{padding-left:4px}
+.key{margin-top:22px;background:var(--bk);color:#fff;border-radius:12px;padding:16px 18px}
+.key b{color:var(--yel)}
+.phrase{font-family:var(--head);font-style:italic;font-weight:900;font-size:28px;line-height:1.05;text-transform:uppercase;color:var(--red);margin:4px 0}
+.fmt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.fmt span{font-family:var(--mono);font-size:12px;background:#fff;border:1px solid var(--line);padding:5px 9px;border-radius:4px}
 /* historial */
 .hist{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.hi{background:var(--bk2);border:1px solid var(--lined);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-.hi iframe{width:100%;height:470px;border:0;background:#fff}
-.hi .bd{padding:12px 14px;font-size:13.5px;color:#D9DADF;flex:1;display:flex;flex-direction:column;gap:6px}
-.hi .bd b{color:#fff;font-size:15px}
-.hi .bd a{color:var(--yel);font-family:var(--mono);font-size:12px;margin-top:auto}
-.kit{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.kit .card ul{padding-left:18px;font-size:14.5px;display:grid;gap:5px;margin-top:8px}
-.copy{position:relative;background:var(--bk);color:#fff;border-radius:12px;padding:52px 20px 20px;font-size:15px;white-space:pre-line}
-.copy button{position:absolute;right:12px;top:12px;font:inherit;font-family:var(--mono);font-size:12px;background:var(--yel);color:var(--bk);border:0;padding:6px 10px;border-radius:4px;cursor:pointer;font-weight:700}
-.strip{background:var(--bk);padding:26px 0}
-.strip img{width:100%;max-width:980px;height:auto;opacity:.9}
-footer{background:var(--bk);color:var(--mutd);padding:34px 0;font-size:13px;border-top:1px solid var(--lined)}
-footer .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-footer .lg{display:flex;align-items:center;gap:18px}
-footer img{height:56px;width:auto}footer img.des{height:28px}
+.hist div{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.hist iframe{width:100%;height:440px;border:0;display:block}
+.hist p{padding:10px 12px;font-size:14px}
+.hist p a{color:var(--red);font-weight:700;text-decoration:none}
+footer{background:var(--bk);color:#A3A6AE;padding:28px 0;font-size:13px}
 footer a{color:#fff}
-@media (max-width:980px){
- .sched,.blk,.kit{grid-template-columns:1fr}
- .ref{position:static}
- .dels{grid-template-columns:1fr 1fr}
- .pgrid{grid-template-columns:repeat(3,1fr)}
- .hgrid,.hist{grid-template-columns:1fr 1fr}
- .specs{grid-template-columns:1fr 1fr}
-}
-@media (max-width:600px){
- .wrap{padding:0 16px}
- section{padding:56px 0}
- .dels,.hist{grid-template-columns:1fr}
- .pgrid{grid-template-columns:1fr 1fr}
- .hgrid{grid-template-columns:1fr}
- .arts{grid-template-columns:1fr 1fr 1fr;gap:6px}
- .emb iframe{height:600px}
- .shots li{grid-template-columns:70px 1fr;gap:10px}
- .top img.des,.top .x{display:none}
- .alert{grid-template-columns:1fr}
-}
+@media (max-width:860px){.cols{grid-template-columns:1fr}.hist{grid-template-columns:1fr 1fr}.hor{grid-template-columns:1fr}.when{margin-left:0}}
+@media (max-width:560px){.wrap{padding:0 16px}.hist{grid-template-columns:1fr}.emb iframe{height:580px}.logos img.des{display:none}}
 </style>
 </head>
 <body>
 
-<header class="top"><div class="wrap">
-  <img src="media/logo-psm-blanco.svg" alt="Pro Motion Sport Marketing"><img class="des" src="media/des-blanco.svg" alt="DES">
-  <nav>
-    <a href="#cronograma">Cronograma</a><a href="#v1">1 · Super Prime</a><a href="#v2">2 · Día de carrera</a><a href="#v3">3 · Cierre</a><a href="#fotos">Fotos</a><a href="#horizontales">Horizontales</a><a href="#historial">Lo que ya hicimos</a><a href="#tecnica">Técnica</a><a href="#whatsapp">Resumen</a>
-  </nav>
+<header><div class="wrap">
+  <div class="logos"><img src="media/logo-psm-blanco.svg" alt="Pro Motion Sport Marketing"><img class="des" src="media/des-blanco.svg" alt="DES"></div>
+  <h1>Guaranda <span>·</span> cobertura de Adrián</h1>
+  <p class="sub">Diego Serrano · Rally Siete Colinas · última fecha del Nacional de Rally. Los videos se entregan sin textos ni logos; los pone Daniel.</p>
+  <div class="hor">
+    <div class="day"><h3>Viernes 20</h3><ul>
+      <li class="e"><b>12:45</b>Entrega video 1</li>
+      <li class="r"><b>14:27</b>Super Prime (TC1)</li>
+      <li class="e"><b>19:00</b>Entrega fotos día 1</li>
+    </ul></div>
+    <div class="day"><h3>Sábado 21</h3><ul>
+      <li class="e"><b>09:00</b>Entrega video 2</li>
+      <li class="r"><b>10:26</b>TC2 · 11:52 TC3 · 13:39 TC4 · 14:41 TC5</li>
+      <li class="e"><b>Podio</b>Entrega fotos día 2 y video 3 (dos horas después)</li>
+    </ul></div>
+  </div>
 </div></header>
 
-<section class="hero">
-  <div class="bg"></div>
-  <div class="wrap">
-    <span class="plate">Dirección de producción · Rally Siete Colinas · Guaranda</span>
-    <h1>Última fecha<em>del Nacional</em></h1>
-    <p class="lead">Guía de cobertura para Adrián: tres videos, un carrusel de fotos por día y tomas horizontales todo el tiempo. Cada pieza tiene su referencia incrustada, el desglose toma por toma y la hora de entrega.</p>
-    <div class="who"><span>Piloto <b>Diego Serrano</b></span><span>Copiloto <b>Juan Felipe Serrano</b></span><span>Cobertura <b>Adrián</b></span><span>Fechas <b>vie 20 y sáb 21 de nov</b></span><span>Auto <b>Opel Corsa Rally4 · #67</b></span></div>
-    <div class="alert"><b class="big">14:27</b><p><strong>Hoy viernes pasa el primer auto por el Super Prime (TC1).</strong> El video 1 tiene que estar publicado antes. Por eso es lo primero que se graba y se edita.</p></div>
-  </div>
-</section>
+<main class="wrap">
 
-<!-- CRONOGRAMA -->
-<section id="cronograma" class="dark">
-  <div class="wrap">
-    <div class="tc"><i>00</i> Cronograma y entregas</div>
-    <h2>Dos días, <em>seis entregas</em></h2>
-    <p class="intro">Horarios de la carrera según el arte oficial que publicó Diego. En amarillo, las horas a las que Adrián entrega cada pieza a Daniel; Daniel pone textos, logos y gráficos y publica.</p>
-    <div class="sched">
-      <div class="card" style="overflow-x:auto">
-        <table class="tbl">
-          <tr><th>Hora</th><th>Qué pasa</th></tr>
-          <tr><th colspan="2" style="color:#fff">Viernes 20 de noviembre</th></tr>
-          <tr><td class="t">Mañana</td><td>Grabar el video 1 en el parque de asistencia y empezar las horizontales.</td></tr>
-          <tr class="del"><td class="t">12:45</td><td><b>Entrega video 1 · Super Prime</b> (sin textos).</td></tr>
-          <tr><td class="t">13:30</td><td>Daniel publica el video 1.</td></tr>
-          <tr class="hot"><td class="t">14:27</td><td><b>TC1 Super Prime</b> · Vinchoa (vía Pircapamba) – Las Cochas · 10,95 km.</td></tr>
-          <tr><td class="t">Tarde</td><td>Fotos del Super Prime y tomas para el video 2. Si se puede, grabar la frase de Diego y el golpe a cámara como respaldo.</td></tr>
-          <tr class="del"><td class="t">19:00</td><td><b>Entrega fotos día 1</b> (10–15 fotos).</td></tr>
-          <tr><th colspan="2" style="color:#fff">Sábado 21 de noviembre</th></tr>
-          <tr><td class="t">07:00</td><td>Saludos, ambiente y frase de Diego para el video 2.</td></tr>
-          <tr class="del"><td class="t">09:00</td><td><b>Entrega video 2 · Día de carrera</b>.</td></tr>
-          <tr><td class="t">09:45</td><td>Daniel publica el video 2.</td></tr>
-          <tr class="hot"><td class="t">10:26</td><td><b>TC2</b> · Vinchoa – Quindigua · 28,8 km</td></tr>
-          <tr class="hot"><td class="t">11:52</td><td><b>TC3</b> · Vinchoa – Quindigua · 28,8 km</td></tr>
-          <tr class="hot"><td class="t">13:39</td><td><b>TC4</b> · Guanujo (Atandahua) – Julio Moreno · 11,5 km</td></tr>
-          <tr class="hot"><td class="t">14:41</td><td><b>TC5</b> · Guanujo (Atandahua) – Julio Moreno · 11,5 km</td></tr>
-          <tr><td class="t">Final</td><td>Llegada, celebración, podio y premiación: tomas del video 3 en cámara lenta.</td></tr>
-          <tr class="del"><td class="t">2 h después del podio</td><td><b>Entrega fotos día 2</b> y <b>video 3 · Cierre</b>.</td></tr>
-          <tr class="del"><td class="t">Dom 22 · 12:00</td><td><b>Entrega de crudos:</b> todas las horizontales y el material completo, para el video resumen.</td></tr>
-        </table>
-        <p class="mut" style="font-size:12.5px;margin-top:10px">Las horas son del primer auto. Diego pasa unos minutos después según su orden de largada. Confirmar en el parque de asistencia la hora de la premiación.</p>
-      </div>
-      <div>
-        <div class="arts"><img src="media/guaranda-0.jpg" alt="Arte Rally Siete Colinas"><img src="media/guaranda-1.jpg" alt="Viernes 20 nov Super Prime"><img src="media/guaranda-2.jpg" alt="Sábado 21 nov tramos"></div>
-        <p class="mut" style="font-size:13px;margin-top:8px">Arte oficial publicado por Diego el 20 de noviembre. <a href="https://www.instagram.com/p/Df8bxVooRE1/" target="_blank" rel="noopener" style="color:var(--yel)">Ver en Instagram ↗</a></p>
-        <div class="dels" style="margin-top:18px;grid-template-columns:1fr 1fr">
-          <a class="del" href="#v1"><span class="k">01</span><h4>Video Super Prime</h4><span class="mut" style="font-size:13.5px">Tensión, ángulos extremos. 9:16</span><div class="w">Vie · 12:45</div></a>
-          <a class="del" href="#fotos"><span class="k">02</span><h4>Fotos día 1</h4><span class="mut" style="font-size:13.5px">Carrusel 3:4</span><div class="w">Vie · 19:00</div></a>
-          <a class="del" href="#v2"><span class="k">03</span><h4>Video Día de carrera</h4><span class="mut" style="font-size:13.5px">Golpe a cámara + frase de Diego. 3:4</span><div class="w">Sáb · 09:00</div></a>
-          <a class="del" href="#fotos"><span class="k">04</span><h4>Fotos día 2</h4><span class="mut" style="font-size:13.5px">Carrusel 3:4</span><div class="w">Sáb · tras el podio</div></a>
-          <a class="del" href="#v3"><span class="k">05</span><h4>Video de cierre</h4><span class="mut" style="font-size:13.5px">Cámara lenta, emoción. 9:16</span><div class="w">Sáb · tras el podio</div></a>
-          <a class="del" href="#horizontales"><span class="k">06</span><h4>Horizontales</h4><span class="mut" style="font-size:13.5px">Todo el tiempo. 16:9</span><div class="w">Dom · 12:00</div></a>
-        </div>
-      </div>
+<!-- 1 -->
+<section class="item">
+  <div class="head"><span class="num">1</span><h2>Video Super Prime</h2><span class="when">Viernes · 12:45</span></div>
+  <div class="cols">
+    <div><p class="label">Referencia · usar este audio</p><div class="emb"><iframe src="https://www.instagram.com/reel/DcWD7V2MSaY/embed/" loading="lazy" allowfullscreen title="Referencia video 1"></iframe></div><a class="open" href="https://www.instagram.com/reel/DcWD7V2MSaY/" target="_blank" rel="noopener">Abrir en Instagram ↗</a></div>
+    <div>
+      <div class="fmt"><span>9:16</span><span>14 segundos</span><span>sin voz</span></div>
+      <h4>Qué grabar</h4>
+      <ol>
+        <li>Logos Motul, Zhumir y Tedasa en el auto, con gran angular pegado a la carrocería y la cámara girando.</li>
+        <li>Barrido a ras de suelo por el costado del Opel.</li>
+        <li>Diego entrando al auto: casco, cinturones, manos en la jaula, desde arriba.</li>
+        <li>El auto completo desde un punto alto.</li>
+        <li>Mecánicos en una rueda, ángulo bajo y cámara rápida.</li>
+        <li>Un plano final quieto de 3–4 segundos, con el auto y el equipo de frente y espacio en el centro para el texto "SUPER PRIME".</li>
+      </ol>
+      <div class="key">La clave: <b>tensión</b>. Cámara en mano muy cerca, inclinada, cortes escondidos en barridos rápidos. Lo único quieto es el final.</div>
     </div>
   </div>
 </section>
 
-<!-- V1 -->
-<section id="v1" class="paper">
-  <div class="wrap">
-    <div class="tc"><i>01</i> Video 1 · Viernes · antes del Super Prime</div>
-    <h2>Super Prime: <em>tensión</em> en 14 segundos</h2>
-    <p class="intro">Mismo audio y misma lógica que la referencia: cámara en mano pegada al auto, ángulos extremos, barridos rápidos y ráfagas de detalles. Termina en un plano fijo donde Daniel pone el texto "SUPER PRIME", como el "QUALI" de la referencia. No hay voz ni explicación.</p>
-    <div class="blk">
-      <div class="ref">
-        <div class="emb"><iframe src="https://www.instagram.com/reel/DcWD7V2MSaY/embed/" loading="lazy" allowfullscreen title="Referencia video 1"></iframe></div>
-        <div class="go"><a class="btn" href="https://www.instagram.com/reel/DcWD7V2MSaY/" target="_blank" rel="noopener">Abrir referencia ↗</a></div>
-        <div class="specs"><div><b>14 s</b><small>duración</small></div><div><b>9:16</b><small>1080×1920</small></div><div><b>~10</b><small>planos</small></div><div><b>Audio</b><small>el de la referencia</small></div></div>
-      </div>
-      <div>
-        <h3>Toma por toma</h3>
-        <ol class="shots">
-          <li><span class="tm">0:00–0:02<small>2 s</small></span><div><b>Detalle extremo del logo Motul</b><p>Gran angular a 10–20 cm de la carrocería, girando la cámara alrededor del logo mientras avanzas. Que el logo llene el cuadro.</p></div></li>
-          <li><span class="tm">0:02–0:03<small>1 s</small></span><div><b>Barrido a ras de suelo por el costado del Opel</b><p>Entra con un barrido rápido desenfocado. Cámara casi en el piso, de abajo hacia arriba, recorriendo el lateral del auto.</p></div></li>
-          <li><span class="tm">0:03–0:04<small>1 s</small></span><div><b>Macro de un detalle con movimiento</b><p>"D. Serrano" en la ventana, la bandera de Ecuador o el #67. Movimiento rápido y desenfoque de movimiento.</p></div></li>
-          <li class="key"><span class="tm">0:04–0:07<small>3 s</small></span><div><b>Diego entrando al auto</b><p>Desde arriba, por la puerta o el techo, gran angular: la mano en la jaula, se sienta, casco, HANS, cinturones. Es el plano humano del video: no lo cortes antes de tiempo.</p></div></li>
-          <li><span class="tm">0:07–0:08<small>1 s</small></span><div><b>Plano alto del auto completo en la asistencia</b><p>Súbete a una escalera, al balde de la camioneta o a algo alto. Toma cenital o picada del Opel con el piso del parque.</p></div></li>
-          <li class="key"><span class="tm">0:08–0:09<small>4–5 cortes</small></span><div><b>Ráfaga de detalles de 0,1–0,2 s</b><p>Número 67, logo Zhumir, Tedasa, rin, guante, casco. Graba cada uno 2 o 3 segundos; en la edición usas solo un pedacito de cada uno, al ritmo del golpe del audio.</p></div></li>
-          <li><span class="tm">0:09–0:10<small>1,5 s</small></span><div><b>Mecánicos trabajando en una rueda</b><p>Ángulo bajo, cámara en mano rápida, pegada a la llanta y a las manos.</p></div></li>
-          <li class="key"><span class="tm">0:10–0:14<small>3,5 s fijo</small></span><div><b>Plano final fijo: el auto y el equipo</b><p>Contrapicado desde el piso, frente del Opel con mecánicos alrededor. Deja espacio libre en el centro para que Daniel ponga "SUPER PRIME". Mantén la cámara quieta los 3,5 segundos completos.</p></div></li>
-        </ol>
-        <div class="box d"><h5>La sensación que buscamos</h5><ul><li>Lente gran angular siempre muy cerca: 10 a 50 cm del auto.</li><li>Cámara inclinada (horizonte torcido), nunca recta y tranquila.</li><li>Los cortes se esconden en barridos rápidos con desenfoque.</li><li>Detalles de marcas en primer plano: Motul, Zhumir, Tedasa, Mirasol.</li><li>El único plano quieto es el final.</li></ul></div>
-        <div class="box y"><h5>Si no da el tiempo</h5>Graba todo en 20 minutos dentro del parque de asistencia, edita en el celular sobre el audio y entrégalo sin pulir. Es mejor publicar a las 13:30 que algo perfecto después del Super Prime.</div>
-      </div>
+<!-- 2 -->
+<section class="item">
+  <div class="head"><span class="num">2</span><h2>Video día de carrera</h2><span class="when">Sábado · 09:00</span></div>
+  <div class="cols">
+    <div><p class="label">Referencia · usar este audio, sin las voces en inglés</p><div class="emb"><iframe src="https://www.instagram.com/reel/DfCz9bmvqqj/embed/" loading="lazy" allowfullscreen title="Referencia video 2"></iframe></div><a class="open" href="https://www.instagram.com/reel/DfCz9bmvqqj/" target="_blank" rel="noopener">Abrir en Instagram ↗</a></div>
+    <div>
+      <div class="fmt"><span>3:4</span><span>30–45 segundos</span><span>cámara en mano</span></div>
+      <h4>Qué grabar</h4>
+      <ol>
+        <li><b>Apertura:</b> Diego con casco se acerca al lente y le da un golpe con el guante. Ahí Daniel pone un texto.</li>
+        <li>Diego saludando a gente; la cámara puede moverse.</li>
+        <li>Guaranda en la mañana, el equipo y el auto.</li>
+        <li>El auto en la pista durante el Super Prime del viernes.</li>
+        <li><b>A la mitad, Diego a cámara:</b><p class="phrase">"Hoy es día de carrera, última carrera del año, vamos con todo."</p>Solo eso, sin explicar nada más.</li>
+      </ol>
+      <div class="key">Graba el golpe a cámara y la frase también el viernes en la tarde, <b>por si el sábado no da el tiempo</b>.</div>
     </div>
   </div>
 </section>
 
-<!-- V2 -->
-<section id="v2" class="dark">
-  <div class="wrap">
-    <div class="tc"><i>02</i> Video 2 · Sábado en la mañana · antes del TC2</div>
-    <h2>Día de carrera: <em>"vamos con todo"</em></h2>
-    <p class="intro">Estilo detrás de cámaras, como la referencia de Le Mans: saludos, cámara inestable sin problema, muchas perspectivas y el auto en la pista del Super Prime de ayer. Se usa el mismo audio, pero sin las voces en inglés. Adrián entrega el video montado; Daniel pone textos, logos y gráficos.</p>
-    <div class="blk">
-      <div class="ref">
-        <div class="emb"><iframe src="https://www.instagram.com/reel/DfCz9bmvqqj/embed/" loading="lazy" allowfullscreen title="Referencia video 2"></iframe></div>
-        <div class="go"><a class="btn" href="https://www.instagram.com/reel/DfCz9bmvqqj/" target="_blank" rel="noopener">Abrir referencia ↗</a></div>
-        <div class="specs"><div><b>30–45 s</b><small>duración</small></div><div><b>3:4</b><small>1080×1440</small></div><div><b>~30</b><small>planos de 1–2 s</small></div><div><b>Audio</b><small>referencia sin voces</small></div></div>
-        <div class="box r"><h5>Formato</h5>La referencia es horizontal (3:2), pero este video va en <b>3:4 vertical</b>, como el feed de Diego. Graba con el sujeto centrado para que nada importante se corte.</div>
-      </div>
-      <div>
-        <h3>Toma por toma</h3>
-        <ol class="shots">
-          <li class="key"><span class="tm">0:00–0:01<small>apertura</small></span><div><b>Diego con casco golpea la cámara</b><p>Como en el segundo 0,3 de la referencia: Diego con el casco puesto se acerca al lente, mira a cámara y le da un golpe con el guante. Corta justo en el golpe; ahí Daniel pone el texto emergente. Gran angular a la altura del pecho. Haz 3 o 4 intentos y protege el lente con un filtro.</p></div></li>
-          <li><span class="tm">0:01–0:05<small>4 s</small></span><div><b>Saludos y llegada</b><p>Diego saludando a alguien (apretón, abrazo, choque de manos), el copiloto, mecánicos, aficionados. Cámara en mano, inestable sin problema, muy cerca.</p></div></li>
-          <li><span class="tm">0:05–0:08<small>3 s</small></span><div><b>Guaranda en la mañana</b><p>Las colinas, la iglesia, calles con gente, el cielo. Uno o dos planos generales para ubicar el lugar.</p></div></li>
-          <li><span class="tm">0:08–0:12<small>4 s</small></span><div><b>Diego y el auto</b><p>Diego apoyado o sentado junto al Opel, detalle del casco dentro de la cabina, manos con guantes, herramientas, mecánicos.</p></div></li>
-          <li><span class="tm">0:12–0:18<small>6 s</small></span><div><b>El Super Prime de ayer</b><p>Lo mejor del TC1: plano general del auto pasando, paso rápido cerca de la cámara, polvo, curva, onboard si existe.</p></div></li>
-          <li class="key"><span class="tm">~0:18–0:22<small>la mitad</small></span><div><b>Diego a cámara: la frase</b><p class="quote" style="color:var(--yel);margin:6px 0">"Hoy es día de carrera, última carrera del año, vamos con todo."</p><p>Una sola frase, sin explicar nada más. Diego sin casco o con el casco abierto, cerca, mirando al lente. Audio limpio con micrófono. Graba 4 o 5 intentos y elige el que tenga más energía.</p></div></li>
-          <li><span class="tm">0:22–0:32<small>10 s</small></span><div><b>Equipo y previa</b><p>Juan Felipe con la hoja de ruta, revisión técnica, abrazos, gente esperando en la ruta, la rampa o el control de salida.</p></div></li>
-          <li><span class="tm">0:32–0:40<small>cierre</small></span><div><b>Detalle lento de la decoración y el auto saliendo</b><p>Como el final de la referencia: paneo lento sobre la decoración (Motul, Zhumir, Cuenca) y el Opel arrancando hacia el tramo.</p></div></li>
-        </ol>
-        <div class="box d"><h5>Audio</h5><ul><li>Se usa la música de la referencia, sin las voces en inglés: corta o tapa esos segmentos para que solo quede la música.</li><li>La frase de Diego entra a la mitad, con la música más baja mientras habla.</li><li>Corta al ritmo de la música. Los planos duran entre 1 y 2 segundos.</li></ul></div>
-        <div class="box y"><h5>Respaldo</h5>Graba el golpe a cámara y la frase de Diego también el viernes en la tarde, por si el sábado temprano no hay tiempo.</div>
-      </div>
+<!-- 3 -->
+<section class="item">
+  <div class="head"><span class="num">3</span><h2>Video de cierre</h2><span class="when">Sábado · tras el podio</span></div>
+  <div class="cols">
+    <div><p class="label">Referencia · solo el audio ("Love Me")</p><div class="emb"><iframe src="https://www.instagram.com/reel/Df5GmuZtZzJ/embed/" loading="lazy" allowfullscreen title="Referencia video 3"></iframe></div><a class="open" href="https://www.instagram.com/reel/Df5GmuZtZzJ/" target="_blank" rel="noopener">Abrir en Instagram ↗</a></div>
+    <div>
+      <div class="fmt"><span>9:16</span><span>20–30 segundos</span><span>cámara lenta</span></div>
+      <h4>Qué grabar</h4>
+      <ol>
+        <li>El equipo celebrando cuando Diego llega al final.</li>
+        <li>Diego subiendo al podio, con el trofeo y la champaña.</li>
+        <li>Diego en fotos con niños y aficionados.</li>
+        <li>Abrazos y felicitaciones: familia, copiloto, auspiciantes.</li>
+      </ol>
+      <div class="key">Lo más <b>cinematográfico</b> posible: cámara lenta (120 o 60 fps), zoom con fondo desenfocado, movimientos suaves y contraluz. Es el video para decir <b>"campeones del Nacional de Rally"</b>.</div>
     </div>
   </div>
 </section>
 
-<!-- V3 -->
-<section id="v3" class="paper">
-  <div class="wrap">
-    <div class="tc"><i>03</i> Video 3 · Sábado · cierre de temporada</div>
-    <h2>El cierre: <em>cámara lenta</em> y emoción</h2>
-    <p class="intro">De la referencia se toma solo el audio ("Love Me"), no su dinámica. Es un audio suave: aquí Adrián saca su mejor nivel cinematográfico. Momentos intensos y reales en cámara lenta. Es el video para decir "campeones del Nacional de Rally".</p>
-    <div class="blk">
-      <div class="ref">
-        <div class="emb short"><iframe src="https://www.instagram.com/reel/Df5GmuZtZzJ/embed/" loading="lazy" allowfullscreen title="Referencia de audio video 3"></iframe></div>
-        <div class="go"><a class="btn" href="https://www.instagram.com/reel/Df5GmuZtZzJ/" target="_blank" rel="noopener">Abrir referencia (solo audio) ↗</a></div>
-        <div class="specs"><div><b>20–30 s</b><small>duración</small></div><div><b>9:16</b><small>1080×1920</small></div><div><b>120 fps</b><small>o 60 fps para cámara lenta</small></div><div><b>Audio</b><small>"Love Me"</small></div></div>
-      </div>
-      <div>
-        <h3>Los momentos que no se pueden perder</h3>
-        <ol class="shots">
-          <li class="key"><span class="tm">Llegada<small>fin del TC5</small></span><div><b>El equipo celebrando cuando llega el auto</b><p>Mecánicos y familia saltando, gritando, corriendo al auto. Diego saliendo de la cabina y abrazando a Juan Felipe.</p></div></li>
-          <li class="key"><span class="tm">Podio<small>premiación</small></span><div><b>Diego subiendo al podio</b><p>El paso al escalón, el trofeo en alto, la champaña. Desde abajo (contrapicado) y de perfil, con el cielo o la gente detrás.</p></div></li>
-          <li class="key"><span class="tm">Afición<small>después</small></span><div><b>Fotos con niños y aficionados</b><p>Diego agachado junto a un niño, firmando, tomándose una selfie. Busca la sonrisa del niño, no solo la de Diego.</p></div></li>
-          <li><span class="tm">Felicitaciones<small>todo el cierre</small></span><div><b>Abrazos, palmadas y manos</b><p>Familia, auspiciantes, otros pilotos felicitándolo. Planos cerrados de manos y caras.</p></div></li>
-          <li><span class="tm">Detalles<small>relleno</small></span><div><b>El auto sucio y el casco</b><p>Barro en la carrocería, el casco sobre el techo, el trofeo sobre el capó, la bandera de Ecuador.</p></div></li>
-          <li class="key"><span class="tm">Final<small>3–4 s</small></span><div><b>Plano final abierto</b><p>Diego y el equipo con el trofeo y el auto, en contraluz si hay sol. Deja aire arriba para el texto "CAMPEONES".</p></div></li>
-        </ol>
-        <div class="box d"><h5>Cómo grabarlo</h5><ul><li>Cámara lenta real: 120 fps (o mínimo 60 fps) y obturación al doble de los fps.</li><li>Lente largo o zoom (70–200 mm o el tele del celular): fondo desenfocado y separación.</li><li>Movimientos lentos y estables, con gimbal o caminando suave. Nada de barridos bruscos.</li><li>Busca contraluz y luz de tarde; la champaña y el polvo brillan a contraluz.</li><li>Planos de 2 a 4 segundos que respiren con la música.</li></ul></div>
-        <div class="box y"><h5>Si el resultado cambia</h5>Graba igual todas las emociones. Si no se confirma el campeonato en Guaranda, el mismo video sirve con otro texto final ("cerramos la temporada"), que pone Daniel.</div>
-      </div>
+<!-- 4 -->
+<section class="item">
+  <div class="head"><span class="num">4</span><h2>Fotos · un carrusel por día</h2><span class="when">Vie 19:00 · Sáb tras el podio</span></div>
+  <div class="cols">
+    <div><p class="label">Referencia · ver la foto 6</p><div class="emb"><iframe src="https://www.instagram.com/p/De2lpjjnKQ3/embed/" loading="lazy" allowfullscreen title="Referencia fotos"></iframe></div><a class="open" href="https://www.instagram.com/p/De2lpjjnKQ3/?img_index=6" target="_blank" rel="noopener">Abrir en la foto 6 ↗</a></div>
+    <div>
+      <div class="fmt"><span>3:4</span><span>10–15 fotos por día</span></div>
+      <h4>Qué fotografiar</h4>
+      <ol>
+        <li><b>Marcas enmarcadas (foto 6):</b> desde abajo y con gran angular, la marca vista a través de algo en primer plano (un capó o una puerta abierta).</li>
+        <li>Diego dentro del auto, por la ventana.</li>
+        <li>Detalles: el casco, los logos del auto, un mecánico de Motul trabajando.</li>
+        <li>Diego riendo, con la prensa o con amigos.</li>
+        <li>Público en la ruta y ambiente del parque; una foto aérea si se puede.</li>
+        <li>El auto en el tramo con polvo.</li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- FOTOS -->
-<section id="fotos" class="paper" style="padding-top:0">
-  <div class="wrap">
-    <div class="tc"><i>04</i> Fotos · un carrusel por día</div>
-    <h2>Las fotos <em>que solemos sacar</em></h2>
-    <p class="intro">Referencia: el carrusel de la final de circuitos en Ambato. Vertical 3:4, de 10 a 15 fotos por día. Cada tipo de foto tiene su número; la 6 es la favorita de Daniel: la marca como protagonista, enmarcada por algo en primer plano.</p>
-    <div class="blk" style="grid-template-columns:380px 1fr">
-      <div class="ref">
-        <div class="emb"><iframe src="https://www.instagram.com/p/De2lpjjnKQ3/embed/" loading="lazy" allowfullscreen title="Referencia de fotos"></iframe></div>
-        <div class="go"><a class="btn" href="https://www.instagram.com/p/De2lpjjnKQ3/?img_index=6" target="_blank" rel="noopener">Abrir en la foto 6 ↗</a></div>
-        <div class="box d"><h5>Entrega por día</h5><ul><li>10–15 fotos en 3:4 (1080×1440 o más).</li><li>Mezcla: 3 de marca, 3 de Diego, 3 de ambiente y público, 2 de acción, 1 aérea.</li><li>Edición sobria: contraste medio, colores reales, sin filtros fuertes.</li></ul></div>
-      </div>
-      <div class="pgrid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="pg"><img src="media/foto-ref-02.jpg" alt="" loading="lazy"><div class="bd"><span class="n">02</span><b>Objeto en primer plano</b><span>Un cono o una valla nítidos, con la ruta y la gente desenfocadas detrás. Cámara al ras del piso.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-04.jpg" alt="" loading="lazy"><div class="bd"><span class="n">04</span><b>Aérea de la ruta</b><span>Dron o un punto alto: la vía, las colinas de Guaranda y los autos pequeños.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-05.jpg" alt="" loading="lazy"><div class="bd"><span class="n">05</span><b>Público en la ruta</b><span>Gente en esquinas, postes y techos esperando el paso del auto.</span></div></div>
-        <div class="pg fav"><img src="media/foto-ref-06.jpg" alt="" loading="lazy"><div class="bd"><span class="n">06 · FAVORITA</span><b>La marca enmarcada</b><span>Ángulo bajo y gran angular. La camioneta Mirasol vista por debajo de un capó o puerta abierta, con la carpa roja detrás. Repetir con Motul, Tedasa y Zhumir.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-07.jpg" alt="" loading="lazy"><div class="bd"><span class="n">07</span><b>Mecánico Motul trabajando</b><span>De espaldas o de lado, con el logo de la camiseta a la vista y las manos en la llanta.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-08.jpg" alt="" loading="lazy"><div class="bd"><span class="n">08</span><b>Diego dentro del auto</b><span>Por la ventana: casco, cinturones, logos del buzo. Foco en el casco.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-09.jpg" alt="" loading="lazy"><div class="bd"><span class="n">09</span><b>Reflejos y vidrios</b><span>Diego a través del parabrisas, con la decoración reflejada encima.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-10.jpg" alt="" loading="lazy"><div class="bd"><span class="n">10</span><b>Detalle de marca en el auto</b><span>Puerta con Motul y ACL, limpio y de frente.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-11.jpg" alt="" loading="lazy"><div class="bd"><span class="n">11</span><b>Casco como protagonista</b><span>El casco apoyado en el auto, con la carpa desenfocada detrás.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-12.jpg" alt="" loading="lazy"><div class="bd"><span class="n">12</span><b>Diego riendo</b><span>En la entrevista o con amigos. Momento humano, de cerca.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-13.jpg" alt="" loading="lazy"><div class="bd"><span class="n">13</span><b>Diego con la prensa</b><span>Entrevista con micrófono y cámara a la vista, con una bandera Motul detrás.</span></div></div>
-        <div class="pg"><img src="media/foto-ref-14.jpg" alt="" loading="lazy"><div class="bd"><span class="n">14</span><b>Ambiente del parque</b><span>La calle del parque de asistencia, carpas, banderas, camiones y gente.</span></div></div>
-      </div>
-    </div>
-    <div class="box d" style="margin-top:22px"><h5>Lo que la referencia no tiene y en rally sí hay que sacar</h5><ul><li>El Opel en el tramo con polvo o barro, con paso rápido y la gente detrás.</li><li>La rampa o el control de largada, con Diego y Juan Felipe.</li><li>El día 2: llegada, podio y trofeo, en foto además del video.</li></ul></div>
-  </div>
-</section>
-
-<!-- HORIZONTALES -->
-<section id="horizontales" class="dark">
-  <div class="wrap">
-    <div class="tc"><i>05</i> Horizontales estáticas · todo el tiempo</div>
-    <h2>Siempre, en todo momento: <em>horizontal y fijo</em></h2>
-    <p class="intro">Con este material se hace el video resumen de la fecha. En cada lugar y en cada momento, además de las fotos y los verticales, Adrián graba 2 o 3 tomas horizontales fijas de 8 a 15 segundos: la cámara quieta y la acción pasando dentro del cuadro. Referencia: el carrusel del día de carrera en Ambato.</p>
-    <div class="blk" style="grid-template-columns:380px 1fr">
-      <div class="ref">
-        <div class="emb short"><iframe src="https://www.instagram.com/p/De4c767nMvr/embed/" loading="lazy" allowfullscreen title="Referencia horizontales"></iframe></div>
-        <div class="go"><a class="btn" href="https://www.instagram.com/p/De4c767nMvr/" target="_blank" rel="noopener">Abrir referencia ↗</a></div>
-        <div class="specs"><div><b>16:9</b><small>4K o 1080p</small></div><div><b>8–15 s</b><small>cada toma</small></div><div><b>Fija</b><small>trípode o mano muy firme</small></div><div><b>+40</b><small>tomas en los 2 días</small></div></div>
-        <div class="box r"><h5>Video resumen</h5>Daniel mencionó otra referencia para el video resumen que todavía no llegó. Igual, estas tomas son la base de ese video.</div>
-      </div>
-      <div class="hgrid" style="grid-template-columns:repeat(3,1fr)">
-        <div class="hg"><img src="media/horiz-ref-01.jpg" alt="" loading="lazy"><div class="bd"><b>Mecánico sobre el auto</b>Plano medio en la carpa, la decoración completa a la vista.</div></div>
-        <div class="hg"><img src="media/horiz-ref-02.jpg" alt="" loading="lazy"><div class="bd"><b>Aérea de la ciudad</b>Guaranda y las colinas desde arriba.</div></div>
-        <div class="hg"><img src="media/horiz-ref-03.jpg" alt="" loading="lazy"><div class="bd"><b>Charla del equipo</b>Diego con mecánicos o el copiloto bajo la carpa.</div></div>
-        <div class="hg"><img src="media/horiz-ref-04.jpg" alt="" loading="lazy"><div class="bd"><b>Multitud</b>Gente con paraguas y gorras, carpas detrás.</div></div>
-        <div class="hg"><img src="media/horiz-ref-05.jpg" alt="" loading="lazy"><div class="bd"><b>Diego de espaldas</b>Con la chaqueta Motul, mirando el parque.</div></div>
-        <div class="hg"><img src="media/horiz-ref-06.jpg" alt="" loading="lazy"><div class="bd"><b>Diego con casco</b>Primer plano lateral antes de subir al auto.</div></div>
-        <div class="hg"><img src="media/horiz-ref-07.jpg" alt="" loading="lazy"><div class="bd"><b>Auto entre la gente</b>El Opel en el parque con personas alrededor.</div></div>
-        <div class="hg"><img src="media/horiz-ref-09.jpg" alt="" loading="lazy"><div class="bd"><b>Arco y calle de carpas</b>Plano general del evento.</div></div>
-        <div class="hg"><img src="media/horiz-ref-10.jpg" alt="" loading="lazy"><div class="bd"><b>Primer plano tapado</b>Otra cámara o una persona en primer plano y la ruta detrás.</div></div>
-        <div class="hg"><img src="media/horiz-ref-12.jpg" alt="" loading="lazy"><div class="bd"><b>Paso del auto</b>Fijo en una curva: el auto entra y sale del cuadro.</div></div>
-        <div class="hg"><img src="media/horiz-ref-08.jpg" alt="" loading="lazy"><div class="bd"><b>Otros autos del parque</b>Para dar contexto de la competencia.</div></div>
-        <div class="hg"><img src="media/horiz-ref-11.jpg" alt="" loading="lazy"><div class="bd"><b>Público detrás de una cámara</b>Capas: primer plano, gente y la ruta.</div></div>
-      </div>
-    </div>
-    <div class="box d"><h5>Reglas de las horizontales</h5><ul><li>Cero movimiento de cámara: la acción se mueve, la cámara no.</li><li>Empieza a grabar 2 segundos antes de que pase algo y corta 2 segundos después.</li><li>Busca capas: algo en primer plano, el sujeto en el medio y el fondo.</li><li>A la altura de los ojos o un poco más bajo. Horizonte recto.</li><li>Lista mínima por día: parque, Diego preparándose, equipo, público, salida al tramo, paso en el tramo, llegada, podio.</li></ul></div>
-  </div>
-</section>
-
-<!-- HISTORIAL -->
-<section id="historial" class="dark" style="padding-top:0">
-  <div class="wrap">
-    <div class="tc"><i>06</i> Lo que ya hicimos en las redes de Diego</div>
-    <h2>Mirar antes de grabar: <em>repetir o variar</em></h2>
-    <p class="intro">Adrián: revisa estas piezas antes y durante la cobertura. Sirven para repetir las perspectivas que ya funcionaron o para buscar un ángulo distinto del mismo momento, sin copiar exacto lo que ya se publicó.</p>
-    <div class="hist">
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DXshD5fjSKi/embed/" loading="lazy" title="Súper Prime Gualaceo"></iframe><div class="bd"><b>Súper Prime en Gualaceo</b>Onboard con el copiloto cantando las notas: el mejor engagement del año. Repetir: cámara a bordo el viernes.<a href="https://www.instagram.com/reel/DXshD5fjSKi/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DaGZfTAx0BG/embed/" loading="lazy" title="Pole Cañar"></iframe><div class="bd"><b>Pole en Cañar · doble pantalla</b>Cámara exterior y cabina sincronizadas. Variar: una toma por dentro mirando la cara de Diego.<a href="https://www.instagram.com/reel/DaGZfTAx0BG/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DZBeB31NWF_/embed/" loading="lazy" title="Imbabura en familia"></iframe><div class="bd"><b>"Nunca es una carrera más"</b>Familia, el cruce de agua y el podio de noche. Repetir: la familia en el cierre.<a href="https://www.instagram.com/reel/DZBeB31NWF_/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DXkZCcwgTAl/embed/" loading="lazy" title="Gualaceo"></iframe><div class="bd"><b>Rampa nocturna en Gualaceo</b>Largada simbólica, gente con manos de espuma Motul y Diego a cámara. Variar: la rampa desde atrás, con el público de frente.<a href="https://www.instagram.com/reel/DXkZCcwgTAl/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/p/Dc9afkCgWnV/embed/" loading="lazy" title="Chimborazo"></iframe><div class="bd"><b>Victoria en Chimborazo</b>Poncho, trofeo y el abrazo con los cascos puestos: el carrusel más comentado. Repetir: el abrazo con Juan Felipe.<a href="https://www.instagram.com/p/Dc9afkCgWnV/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DXndvT_jU4f/embed/" loading="lazy" title="FPV Gualaceo"></iframe><div class="bd"><b>Dron FPV persiguiendo el auto</b>Si hay piloto de FPV en Guaranda, es la toma más espectacular del tramo.<a href="https://www.instagram.com/reel/DXndvT_jU4f/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/De79drztBi0/embed/" loading="lazy" title="Campeón circuitos"></iframe><div class="bd"><b>Campeón de circuitos (Ambato)</b>El cierre del otro campeonato. El video 3 de Guaranda tiene que superarlo en cine y emoción.<a href="https://www.instagram.com/reel/De79drztBi0/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-      <div class="hi"><iframe src="https://www.instagram.com/reel/DY9_lQnRGx7/embed/" loading="lazy" title="Imbabura balance"></iframe><div class="bd"><b>Diego a cámara en Imbabura</b>Salto bajo el arco, rampa de noche y Diego hablando corto. Buen modelo para la frase del video 2.<a href="https://www.instagram.com/reel/DY9_lQnRGx7/" target="_blank" rel="noopener">Abrir ↗</a></div></div>
-    </div>
-    <p class="mut" style="margin-top:16px;font-size:14px">Perfil completo: <a href="https://www.instagram.com/diegoeserrano/" target="_blank" rel="noopener" style="color:var(--yel)">@diegoeserrano ↗</a></p>
-  </div>
-</section>
-
-<div class="strip"><div class="wrap"><p class="mut" style="font-family:var(--mono);font-size:11px;text-transform:uppercase;color:var(--mutd);margin-bottom:12px">Marcas que tienen que verse en fotos y videos</p><img src="media/auspiciantes-blanco.svg" alt="Factory Bike, Zhumir, Tedasa, Motul, Moto Republic, Auto Total, Finsok, Plaza Soleil, La Spritzería, Autos, Mirasol Chevrolet"></div></div>
-
-<!-- TECNICA -->
-<section id="tecnica" class="paper">
-  <div class="wrap">
-    <div class="tc"><i>07</i> Técnica, entrega y equipo</div>
-    <h2>Para que nada <em>se pierda</em></h2>
-    <div class="kit">
-      <div class="card"><h4>Formatos</h4><ul><li>Video 1 y video 3: vertical 9:16 (1080×1920).</li><li>Video 2 y fotos: 3:4 (1080×1440).</li><li>Horizontales: 16:9, 4K si se puede.</li><li>Graba vertical en 4K para poder recortar a 3:4 sin perder calidad.</li></ul></div>
-      <div class="card"><h4>Cámara</h4><ul><li>Acción y tensión: 50/60 fps.</li><li>Cámara lenta (video 3): 120 fps.</li><li>Obturación al doble de los fps.</li><li>Gran angular para el video 1; tele o zoom para el video 3.</li><li>Exposición cuidada: no quemar el cielo de Guaranda.</li></ul></div>
-      <div class="card"><h4>Entrega</h4><ul><li>Videos editados: por WhatsApp a Daniel, en la mejor calidad (como documento, no como video).</li><li>Videos sin textos ni logos: los pone Daniel.</li><li>Crudos y horizontales: en la carpeta compartida que indique Daniel.</li><li>Nombre de archivo: <span style="font-family:var(--mono);font-size:12.5px">GUA_DIA1_V1_SUPERPRIME.mp4</span></li></ul></div>
-      <div class="card"><h4>Audio</h4><ul><li>Videos 1 y 2: el audio de su referencia. En el video 2, sin las voces en inglés.</li><li>Video 3: el audio "Love Me" de su referencia.</li><li>Micrófono para la frase de Diego.</li><li>Graba también el sonido ambiente del motor, sirve para el resumen.</li></ul></div>
-      <div class="card"><h4>Marcas en cuadro</h4><ul><li>Motul y Tedasa: carpa, camisetas de los mecánicos, decoración.</li><li>Zhumir y Plaza Soleil: capó y techo.</li><li>Mirasol Chevrolet: la camioneta D-Max de asistencia.</li><li>Auto Total, Factory, Moto Republic, La Spritzería, Finsok y Autos: en la decoración y en el buzo.</li></ul></div>
-      <div class="card"><h4>Llevar</h4><ul><li>Baterías y memorias de repuesto (los dos días son largos).</li><li>Trípode o monopie para las horizontales.</li><li>Filtro protector en el lente (el golpe a cámara).</li><li>Gimbal para el video 3.</li><li>Paño para el polvo y protección contra lluvia.</li></ul></div>
+<!-- 5 -->
+<section class="item">
+  <div class="head"><span class="num">5</span><h2>Horizontales fijas · todo el tiempo</h2><span class="when">Crudos · domingo 12:00</span></div>
+  <div class="cols">
+    <div><p class="label">Referencia</p><div class="emb"><iframe src="https://www.instagram.com/p/De4c767nMvr/embed/" loading="lazy" allowfullscreen title="Referencia horizontales"></iframe></div><a class="open" href="https://www.instagram.com/p/De4c767nMvr/" target="_blank" rel="noopener">Abrir en Instagram ↗</a></div>
+    <div>
+      <div class="fmt"><span>16:9</span><span>8–15 segundos cada una</span><span>cámara quieta</span></div>
+      <h4>Cómo</h4>
+      <ul class="l">
+        <li>En cada lugar y cada momento, 2 o 3 tomas horizontales sin mover la cámara: la acción pasa dentro del cuadro.</li>
+        <li>Parque, Diego preparándose, el equipo, el público, la salida, el auto en el tramo, la llegada y el podio.</li>
+        <li>Con esto se arma el video resumen de la fecha.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- WHATSAPP -->
-<section id="whatsapp" class="dark">
-  <div class="wrap">
-    <div class="tc"><i>08</i> Resumen para enviar</div>
-    <h2>En un <em>mensaje</em></h2>
-    <p class="intro">Para mandárselo a Adrián por WhatsApp junto con el enlace de esta página.</p>
-    <div class="copy" id="wa"><button onclick="cp()">Copiar</button>Adrián, la cobertura de Diego en Guaranda (Rally Siete Colinas):
-
-🎬 VIDEO 1 · HOY VIERNES · entrega 12:45
-Super Prime: 14 s, 9:16, con el audio de la referencia. Tensión: gran angular pegado al auto, ángulos extremos, barridos y ráfagas de detalles de marcas. Final fijo de 3,5 s para el texto "SUPER PRIME". El TC1 es a las 14:27: tiene que salir antes.
-
-📸 FOTOS DÍA 1 · entrega 19:00
-10–15 fotos 3:4 como el carrusel de Ambato (la favorita es la 6: la marca enmarcada).
-
-🎬 VIDEO 2 · SÁBADO · entrega 09:00
-Día de carrera, 3:4, con el audio de la referencia sin las voces en inglés. Abre con Diego con casco golpeando la cámara. A la mitad, Diego dice: "Hoy es día de carrera, última carrera del año, vamos con todo." Saludos, cámara en mano y tomas del Super Prime.
-
-🎬 VIDEO 3 · SÁBADO · tras el podio
-Cierre en cámara lenta con el audio "Love Me": celebración, podio, fotos con niños y aficionados, abrazos. Lo más cinematográfico posible.
-
-📸 FOTOS DÍA 2 · tras el podio
-
-🎥 SIEMPRE: tomas horizontales fijas 16:9 de 8–15 s en todo momento, para el video resumen. Crudos el domingo a las 12:00.
-
-Los videos van sin textos ni logos: los pongo yo. Antes de grabar, revisa lo que ya hicimos en las redes de Diego para repetir o variar las perspectivas.
-
-Todo, con las referencias, aquí:
-https://pro-motion-sport-marketing.github.io/diego-serrano-produccion/guaranda/</div>
+<!-- Historial -->
+<section class="item" style="border:0">
+  <div class="head"><span class="num">+</span><h2>Lo que ya hicimos</h2></div>
+  <p style="margin-bottom:20px;max-width:720px">Antes de grabar, revisa estas piezas de Diego: para repetir las perspectivas que funcionaron o buscar un ángulo distinto.</p>
+  <div class="hist">
+    <div><iframe src="https://www.instagram.com/reel/DXshD5fjSKi/embed/" loading="lazy" title="Súper Prime Gualaceo"></iframe><p>Súper Prime en Gualaceo, a bordo. <a href="https://www.instagram.com/reel/DXshD5fjSKi/" target="_blank" rel="noopener">Abrir ↗</a></p></div>
+    <div><iframe src="https://www.instagram.com/reel/DaGZfTAx0BG/embed/" loading="lazy" title="Pole Cañar"></iframe><p>Pole en Cañar, doble cámara. <a href="https://www.instagram.com/reel/DaGZfTAx0BG/" target="_blank" rel="noopener">Abrir ↗</a></p></div>
+    <div><iframe src="https://www.instagram.com/reel/DZBeB31NWF_/embed/" loading="lazy" title="Imbabura"></iframe><p>Victoria en familia, Imbabura. <a href="https://www.instagram.com/reel/DZBeB31NWF_/" target="_blank" rel="noopener">Abrir ↗</a></p></div>
+    <div><iframe src="https://www.instagram.com/reel/De79drztBi0/embed/" loading="lazy" title="Campeón circuitos"></iframe><p>Campeón de circuitos, Ambato. <a href="https://www.instagram.com/reel/De79drztBi0/" target="_blank" rel="noopener">Abrir ↗</a></p></div>
   </div>
 </section>
 
-<footer><div class="wrap">
-  <div class="lg"><img src="media/logo-psm-blanco.svg" alt="Pro Motion Sport Marketing"><img class="des" src="media/des-blanco.svg" alt="DES"></div>
-  <div>Dirección de producción: equipo de Pro Motion Sport Marketing · Rally Siete Colinas, Guaranda · 20–21 nov 2026.<br>Elaborado por Pro Motion Sport Marketing · <a href="https://www.instagram.com/pro_motion.ec/" target="_blank" rel="noopener">@pro_motion.ec</a> · Noviembre 2026</div>
-</div></footer>
+</main>
 
-<script>
-function cp(){var b=document.querySelector('#wa button'),t=document.getElementById('wa').innerText.replace(/^Copiar\s*/,'');
- (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='¡Copiado!';setTimeout(function(){b.textContent='Copiar'},1500)}).catch(function(){b.textContent='Selecciona y copia'})}
-</script>
+<footer><div class="wrap">Dirección de producción: equipo de Pro Motion Sport Marketing · Rally Siete Colinas, Guaranda · 20–21 nov 2026.<br>Elaborado por Pro Motion Sport Marketing · <a href="https://www.instagram.com/pro_motion.ec/" target="_blank" rel="noopener">@pro_motion.ec</a> · Noviembre 2026</div></footer>
 </body>
 </html>
