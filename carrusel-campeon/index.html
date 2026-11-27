@@ -37,6 +37,7 @@ h1 em{font-style:inherit;color:var(--rojo)}
 .dots b.on{background:#3897f0}
 .nav{display:flex;justify-content:space-between;padding:10px 14px 0}
 .nav button{background:none;border:1px solid var(--linea);color:var(--hueso);border-radius:999px;padding:8px 16px;font:600 14px 'Instrument Sans';cursor:pointer}
+.nav #snd{font-size:13px}
 .nav button:hover{border-color:var(--hueso)}
 .cap{white-space:pre-line;background:var(--ink2);border:1px solid var(--linea);border-radius:14px;padding:22px;font-size:16px;line-height:1.6}
 .row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 12px}
@@ -64,38 +65,39 @@ footer img{height:22px}
 <header><img src="media/des-blanco.svg" alt="DES Diego Serrano"><span class="tag">Carrusel · Noviembre 2026</span></header>
 
 <div class="hero">
-  <span class="kick">Post de Diego Serrano · 9 láminas</span>
+  <span class="kick">Post de Diego Serrano · 10 láminas · foto + video</span>
   <h1>Muchos te ven <em>aquí.</em><br>Pocos te dan la mano<br>cuando estás <em>aquí.</em></h1>
-  <p class="lead">Del barranco de Piñas al título nacional de rally 2026 en RC4, junto a su hermano y copiloto Juan Felipe. No es un "véanme, soy campeón": es una invitación a darle la mano a quien está en el piso.</p>
+  <p class="lead">Del barranco de Piñas al título nacional de rally 2026 en RC4, junto a su hermano y copiloto Juan Felipe. Cinco fotos y cuatro videos con sonido real, entre ellos la cámara a bordo del accidente. No es un "véanme, soy campeón": es una invitación a darle la mano a quien está en el piso.</p>
 </div>
 
 <div class="stage">
   <div class="phone">
     <div class="top"><i></i><div>diegoeserrano<small>Guaranda, Ecuador</small></div></div>
     <div class="track" id="track">
-      <img src="media/web_01.jpg" alt="Lámina 1: Diego y Juan Felipe en el podio con los trofeos. Muchos te ven aquí.">
-      <img src="media/web_02.jpg" alt="Lámina 2: el auto accidentado en la maleza. Pocos te dan la mano cuando estás aquí.">
-      <video src="media/03-desde-adentro.mp4" poster="media/poster_03.jpg" muted loop playsinline preload="metadata" aria-label="Lámina 3: video a bordo del accidente"></video>
-      <img src="media/web_04.jpg" alt="Lámina 4: la ruta en niebla. Lo que no se ve.">
-      <img src="media/web_05.jpg" alt="Lámina 5: la puerta del auto con los nombres J.F. Serrano y D. Serrano.">
-      <img src="media/web_06.jpg" alt="Lámina 6: un niño mira el abrazo de Diego. Los de siempre.">
-      <img src="media/web_07.jpg" alt="Lámina 7: los dos hermanos con el trofeo. Campeones nacionales, los dos.">
-      <img src="media/web_08.jpg" alt="Lámina 8: Si hoy ves a alguien en el piso, no esperes a verlo en el podio para darle la mano.">
-      <img src="media/web_09.jpg" alt="Lámina 9: la familia en el podio. Este título también es suyo.">
+      <img src="media/web_01.jpg" alt="01 · Podio: Muchos te ven aquí.">
+      <img src="media/web_02.jpg" alt="02 · El auto en el barranco: Pocos te dan la mano cuando estás aquí.">
+      <video src="media/03-camara-a-bordo-nano.mp4" poster="media/poster_03.jpg" muted loop playsinline preload="metadata" aria-label="03 · Cámara a bordo con audio real"></video>
+      <img src="media/web_04.jpg" alt="04 · Nunca un silencio pesó tanto.">
+      <video src="media/05-verlo-reir-a-mi-lado.mp4" poster="media/poster_05.jpg" muted loop playsinline preload="metadata" aria-label="05 · De no escuchar su voz a verlo reír a mi lado"></video>
+      <img src="media/web_06.jpg" alt="06 · Nos caímos juntos. Nos levantamos juntos.">
+      <video src="media/07-volvimos-a-acelerar.mp4" poster="media/poster_07.jpg" muted loop playsinline preload="metadata" aria-label="07 · Volvimos a acelerar"></video>
+      <img src="media/web_08.jpg" alt="08 · Campeones. Los dos.">
+      <video src="media/09-este-titulo-es-suyo.mp4" poster="media/poster_09.jpg" muted loop playsinline preload="metadata" aria-label="09 · Este título es suyo"></video>
+      <img src="media/web_10.jpg" alt="10 · Si hoy ves a alguien en el piso, no esperes a verlo en el podio para darle la mano.">
     </div>
     <div class="dots" id="dots"></div>
-    <div class="nav"><button id="prev" aria-label="Lámina anterior">←</button><button id="next" aria-label="Lámina siguiente">→</button></div>
+    <div class="nav"><button id="prev" aria-label="Lámina anterior">←</button><button id="snd">🔇 Activar sonido</button><button id="next" aria-label="Lámina siguiente">→</button></div>
   </div>
 
   <div>
     <div class="row"><h2>Copy del post</h2><button class="btn" id="copy">Copiar texto</button></div>
     <div class="cap" id="caption">Muchos te ven en el podio. Pocos te ven en el barranco.
 
-En Piñas, el auto no respondió y terminamos barranco abajo. Juan Felipe y yo íbamos adentro. Después vinieron días en los que no sabía si iba a volver a subirme a un auto de rally.
+En Piñas, el auto empezó a dar vueltas y terminamos barranco abajo. Lo que más recuerdo no son los golpes. Es el silencio. Llamar a mi hermano y no escuchar su voz.
 
-Hoy somos campeones nacionales de rally 2026 en RC4. Los dos. Juntos, como siempre.
+Hoy somos campeones nacionales de rally 2026 en RC4. Los dos. Nos caímos juntos y nos levantamos juntos.
 
-Este título no es solo nuestro. Es de mi familia, del equipo y de cada persona que nos dio la mano cuando no había ningún trofeo que celebrar. Y de las marcas que siguieron creyendo en nosotros.
+Este título es de mi familia, del equipo, de las marcas que siguieron creyendo y de cada persona que nos dio la mano cuando no había ningún trofeo que celebrar.
 
 Si hoy ves a alguien en el piso, no esperes a verlo en el podio para darle la mano.
 
@@ -110,41 +112,45 @@ Etiqueta a la persona que te dio la mano cuando nadie estaba mirando 👇
 
 <section class="block">
   <div class="row"><h2>Descargar para publicar</h2><a class="btn" href="media/carrusel-diego-serrano.zip" download>Descargar todo (.zip)</a></div>
-  <p style="color:var(--muted);margin:-2px 0 20px;font-size:15px">Archivos a 1080 × 1350. La lámina 3 es un video de 5 s con el sonido real; va en tercer lugar dentro del mismo carrusel.</p>
+  <p style="color:var(--muted);margin:-2px 0 20px;font-size:15px">Archivos a 1080 × 1350. Fotos en 1, 2, 4, 6, 8 y 10; videos con sonido en 3, 5, 7 y 9. Se suben en ese orden, en un solo carrusel.</p>
   <div class="grid">
     <a href="media/01-muchos-te-ven-aqui.jpg" download><img src="media/web_01.jpg" alt="">01 · Muchos te ven aquí</a>
     <a href="media/02-pocos-te-dan-la-mano.jpg" download><img src="media/web_02.jpg" alt="">02 · Pocos te dan la mano</a>
-    <a href="media/03-desde-adentro.mp4" download><img src="media/poster_03.jpg" alt="">03 · Desde adentro (video)</a>
-    <a href="media/04-lo-que-no-se-ve.jpg" download><img src="media/web_04.jpg" alt="">04 · Lo que no se ve</a>
-    <a href="media/05-nunca-estuve-solo.jpg" download><img src="media/web_05.jpg" alt="">05 · Nunca estuve solo</a>
-    <a href="media/06-los-de-siempre.jpg" download><img src="media/web_06.jpg" alt="">06 · Los de siempre</a>
-    <a href="media/07-campeones-los-dos.jpg" download><img src="media/web_07.jpg" alt="">07 · Campeones, los dos</a>
-    <a href="media/08-darle-la-mano.jpg" download><img src="media/web_08.jpg" alt="">08 · Darle la mano</a>
-    <a href="media/09-cierre.jpg" download><img src="media/web_09.jpg" alt="">09 · Cierre</a>
+    <a href="media/03-camara-a-bordo-nano.mp4" download><img src="media/poster_03.jpg" alt="">03 · Cámara a bordo (video)</a>
+    <a href="media/04-nunca-un-silencio.jpg" download><img src="media/web_04.jpg" alt="">04 · Nunca un silencio</a>
+    <a href="media/05-verlo-reir-a-mi-lado.mp4" download><img src="media/poster_05.jpg" alt="">05 · Verlo reír (video)</a>
+    <a href="media/06-nos-levantamos-juntos.jpg" download><img src="media/web_06.jpg" alt="">06 · Nos levantamos juntos</a>
+    <a href="media/07-volvimos-a-acelerar.mp4" download><img src="media/poster_07.jpg" alt="">07 · Volvimos a acelerar (video)</a>
+    <a href="media/08-campeones-los-dos.jpg" download><img src="media/web_08.jpg" alt="">08 · Campeones, los dos</a>
+    <a href="media/09-este-titulo-es-suyo.mp4" download><img src="media/poster_09.jpg" alt="">09 · Este título es suyo (video)</a>
+    <a href="media/10-darle-la-mano.jpg" download><img src="media/web_10.jpg" alt="">10 · Darle la mano</a>
   </div>
 </section>
 
 <section class="block">
   <h2 style="margin-bottom:18px">Cómo se cuenta la historia</h2>
   <ol class="guion">
-    <li><span><b>Podio.</b> El momento que todos ven: los dos hermanos con los trofeos en Guaranda.</span></li>
-    <li><span><b>Barranco.</b> La misma frase, al revés: el auto en la maleza después de Piñas.</span></li>
-    <li><span><b>Desde adentro.</b> Cinco segundos reales de la cámara a bordo. Sin dramatizar.</span></li>
-    <li><span><b>Lo que no se ve.</b> Las dudas de volver, en blanco y negro.</span></li>
-    <li><span><b>Nunca estuve solo.</b> Los dos nombres en la puerta: J.F. Serrano y D. Serrano.</span></li>
-    <li><span><b>Los de siempre.</b> Un niño mira el abrazo: los que estuvieron sin trofeo de por medio.</span></li>
-    <li><span><b>Hoy.</b> Campeones nacionales de rally 2026, RC4. Los dos.</span></li>
-    <li><span><b>El mensaje.</b> No esperes a ver a alguien en el podio para darle la mano.</span></li>
-    <li><span><b>Gracias.</b> El título también es de quienes estuvieron abajo, con una invitación a etiquetar.</span></li>
+    <li><span><b>Foto · podio.</b> "Muchos te ven aquí."</span></li>
+    <li><span><b>Foto · el auto en el barranco.</b> "Pocos te dan la mano cuando estás aquí."</span></li>
+    <li><span><b>Video · cámara a bordo, 21 s, audio real.</b> El auto da vueltas; luego, en silencio, Diego llama: "¡Ñaño! ¡Ñaño, no me hagas esto!". Cierra con "Y Juan Felipe no respondía."</span></li>
+    <li><span><b>Foto · la ruta en niebla.</b> "Nunca un silencio pesó tanto."</span></li>
+    <li><span><b>Video · los dos hermanos riéndose abrazados en Guaranda.</b> "De no escuchar su voz… a verlo reír a mi lado."</span></li>
+    <li><span><b>Foto · la puerta con J.F. Serrano y D. Serrano.</b> "Nos caímos juntos. Nos levantamos juntos."</span></li>
+    <li><span><b>Video · Diego antes de la carrera: "Hoy es día de carrera, la última carrera del año, ¡vamos con todo!", y el auto en el tramo.</b> "Volvimos a acelerar."</span></li>
+    <li><span><b>Foto · los dos con el trofeo.</b> "Campeones. Los dos."</span></li>
+    <li><span><b>Video · abrazos con la familia y el podio.</b> "A los que nos dieron la mano cuando estábamos abajo: este título es suyo."</span></li>
+    <li><span><b>Foto · el mensaje.</b> "Si hoy ves a alguien en el piso, no esperes a verlo en el podio para darle la mano."</span></li>
   </ol>
 </section>
 
 <section class="block">
   <h2 style="margin-bottom:18px">Confirmar con Diego antes de publicar</h2>
   <ul class="notes">
-    <li><b>Fecha del accidente.</b> La prensa ubica el accidente de Piñas en junio de 2024: Rally de Piñas, auto #65, el mismo número que se ve en la foto. Por eso las láminas no dicen "hace un año". Si Diego quiere poner la fecha, se agrega en la lámina 2.</li>
-    <li><b>Categoría.</b> El título 2026 es en RC4. En Guaranda quedaron 1.º en RC4 y 3.º en la general, así que la portada lo dice tal cual.</li>
-    <li><b>Marcas.</b> Las etiquetas del copy son solo las que aparecen en la biografía de Diego. Faltan por confirmar Motul, Auto Total, MRF Tyres, Republic, La Taquería y las demás marcas que estuvieron.</li>
+    <li><b>El audio del accidente.</b> Confirmar que Diego y Juan Felipe estén de acuerdo con publicarlo. Es el momento más fuerte del carrusel y también el más íntimo.</li>
+    <li><b>Fecha.</b> La prensa ubica el accidente de Piñas en junio de 2024 (auto #65, el mismo de la foto). Por eso ninguna lámina dice "hace un año".</li>
+    <li><b>Categoría.</b> El título 2026 es en RC4: 1.º en RC4 y 3.º en la general en Guaranda.</li>
+    <li><b>Música.</b> Las láminas 7 y 9 llevan la música del video editado de Guaranda. Si Instagram la silencia, se suben sin sonido y se elige una canción desde la app.</li>
+    <li><b>Marcas.</b> Completar las etiquetas que falten: Motul, Auto Total, MRF Tyres, Republic, La Taquería y otras.</li>
   </ul>
 </section>
 
@@ -160,6 +166,7 @@ t.addEventListener('scroll',()=>{requestAnimationFrame(upd);clearTimeout(tm);tm=
 function go(i){tgt=Math.max(0,Math.min(items.length-1,i));t.scrollTo({left:tgt*t.clientWidth,behavior:'smooth'})}
 document.getElementById('prev').onclick=()=>go(tgt-1);
 document.getElementById('next').onclick=()=>go(tgt+1);
+let snd=false;document.getElementById('snd').onclick=e=>{snd=!snd;items.forEach(el=>{if(el.tagName==='VIDEO')el.muted=!snd});e.target.textContent=snd?'🔊 Sonido activado':'🔇 Activar sonido';upd()};
 document.getElementById('copy').onclick=async e=>{try{await navigator.clipboard.writeText(document.getElementById('caption').innerText);e.target.textContent='Copiado ✓'}catch(_){e.target.textContent='Selecciona y copia'}setTimeout(()=>e.target.textContent='Copiar texto',2200)};
 </script>
 </body>
