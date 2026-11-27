@@ -153,12 +153,13 @@ Etiqueta a la persona que te dio la mano cuando nadie estaba mirando 👇
 <script>
 const t=document.getElementById('track'),items=[...t.children],d=document.getElementById('dots');
 items.forEach(()=>d.appendChild(document.createElement('b')));
-const dots=[...d.children];let cur=0;
+const dots=[...d.children];let cur=0,tgt=0,tm;
 function upd(){cur=Math.round(t.scrollLeft/t.clientWidth);dots.forEach((b,i)=>b.classList.toggle('on',i===cur));
  items.forEach((el,i)=>{if(el.tagName==='VIDEO'){i===cur?el.play().catch(()=>{}):el.pause()}})}
-t.addEventListener('scroll',()=>requestAnimationFrame(upd));upd();
-document.getElementById('prev').onclick=()=>t.scrollTo({left:Math.max(0,cur-1)*t.clientWidth,behavior:'smooth'});
-document.getElementById('next').onclick=()=>t.scrollTo({left:Math.min(items.length-1,cur+1)*t.clientWidth,behavior:'smooth'});
+t.addEventListener('scroll',()=>{requestAnimationFrame(upd);clearTimeout(tm);tm=setTimeout(()=>{tgt=cur},150)});upd();
+function go(i){tgt=Math.max(0,Math.min(items.length-1,i));t.scrollTo({left:tgt*t.clientWidth,behavior:'smooth'})}
+document.getElementById('prev').onclick=()=>go(tgt-1);
+document.getElementById('next').onclick=()=>go(tgt+1);
 document.getElementById('copy').onclick=async e=>{try{await navigator.clipboard.writeText(document.getElementById('caption').innerText);e.target.textContent='Copiado ✓'}catch(_){e.target.textContent='Selecciona y copia'}setTimeout(()=>e.target.textContent='Copiar texto',2200)};
 </script>
 </body>
